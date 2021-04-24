@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import News from './components/News/News.js'
+import Search from './components/Search/Search.js'
+
 
 function App() {
   const [news, setNews] = useState([]);
 
-  //
-  // useEffect(() => {
-  //     axios.get(`https://randomuser.me/api/?results=10`).then((res) => {
-  //       const studentArray = res.data.results;
-  //
-  //       setStudents(studentArray);
-  //     });
-  //   }, []);
 useEffect(() => {
   const getNews = async () => {
   try {
@@ -35,8 +29,9 @@ getNews();
   return (
     <div className="App">
         <h1>
-          Hello world!
+          +++ Hacker News +++
         </h1>
+        <Search news={news} />
         <News news={news} />
     </div>
   );
