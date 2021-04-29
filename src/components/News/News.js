@@ -2,23 +2,29 @@ import React from "react";
 import "./News.css";
 
 export default function News({ news, isLoading }) {
-  console.log(news)
+  // console.log(news)
   return (
     <div>
-        <h2>Results</h2>
 
         {isLoading ? (
-         <div>Loading news...</div>
+         <div>
+         <p>Loading news...</p>
+         <i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+         </div>
         ) : (
-        <ul>
-        {news.length!==0 && news.hits.map((newsPost) => (
+        <ol>
+        {news.hits.length !==0 ? (news.hits.map((newsPost) => (
           <li key={newsPost.objectID}>
               <a href={newsPost.url} target="_blank" rel="noreferrer">
               {newsPost.title}
               </a>
           </li>
-        ))}
-      </ul>
+        ))) :
+        (
+          <p>Try again</p>
+        )
+      }
+      </ol>
       )}
     </div>
     );

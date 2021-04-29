@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import "./Search.css";
 
-export default function Searchbar({ setUrl, query, setQuery}) {
-    const[inputValue, setInputValue] = useState( " ");
+export default function Searchbar({ setUrl }) {
+    const[inputValue, setInputValue] = useState( "");
 
     function handleOnKeyDown({ keyCode }){
         if(keyCode === 13) {
-          setUrl(`http://hn.algolia.com/api/v1/search?query=${query}`)
+          setUrl(`http://hn.algolia.com/api/v1/search?query=${inputValue}`)
       }
     }
 
@@ -15,19 +15,18 @@ export default function Searchbar({ setUrl, query, setQuery}) {
     }
 
   return (
-    <div>
+    <div className="searchbar">
         <input
             onKeyDown={handleOnKeyDown}
-            onChange= {handleInputValue}
+            onChange={handleInputValue}
             type="text"
-            value={query}
-            placeholder="Search.."/>
+            value={inputValue}
+            placeholder="Search.."
+            />
         <button
-            type="button"
             onClick={() =>
-            setUrl(`http://hn.algolia.com/api/v1/search?query=${query}`)
-        }
-      >
+            setUrl(`http://hn.algolia.com/api/v1/search?query=${inputValue}`)
+        }>
             <i className = "fa fa-search"></i>
         </button>
 
