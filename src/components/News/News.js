@@ -21,7 +21,7 @@ export default function News({ news, isLoading }) {
           </li>
         ))) :
         (
-          <p>Try again</p>
+          <h2>0 results - please try again</h2>
         )
       }
       </ol>
