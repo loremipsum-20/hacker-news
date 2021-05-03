@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/loremipsum-20/hacker-news/static/css/main.45ecc967.chunk.css",
-    "main.js": "/loremipsum-20/hacker-news/static/js/main.9a417ec3.chunk.js",
-    "main.js.map": "/loremipsum-20/hacker-news/static/js/main.9a417ec3.chunk.js.map",
+    "main.js": "/loremipsum-20/hacker-news/static/js/main.a77063a9.chunk.js",
+    "main.js.map": "/loremipsum-20/hacker-news/static/js/main.a77063a9.chunk.js.map",
     "runtime-main.js": "/loremipsum-20/hacker-news/static/js/runtime-main.c4b26b1f.js",
     "runtime-main.js.map": "/loremipsum-20/hacker-news/static/js/runtime-main.c4b26b1f.js.map",
     "static/js/2.56c4bc70.chunk.js": "/loremipsum-20/hacker-news/static/js/2.56c4bc70.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c4b26b1f.js",
     "static/js/2.56c4bc70.chunk.js",
     "static/css/main.45ecc967.chunk.css",
-    "static/js/main.9a417ec3.chunk.js"
+    "static/js/main.a77063a9.chunk.js"
   ]
 }
