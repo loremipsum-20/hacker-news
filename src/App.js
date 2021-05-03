@@ -9,7 +9,7 @@ function App() {
   const [url, setUrl] = useState(
   'https://hn.algolia.com/api/v1/search?query=react',
 );
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const getNews = async () => {
